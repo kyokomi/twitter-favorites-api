@@ -1,0 +1,14 @@
+application: hoge-api
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+- url: /.*
+  script: _go_app
+
+env_variables:
+  TWITTER_API_KEY: 'fuga'
+  TWITTER_API_SECRET: 'hoge'
+  TWITTER_ID: 'keikenchi_bot'
+  CACHE_COUNT: 40
